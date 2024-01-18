@@ -6,3 +6,7 @@
 .titulo {
     @apply text-center;
 }
+
+.imgPlant {
+    @apply w-72 h-auto;
+}

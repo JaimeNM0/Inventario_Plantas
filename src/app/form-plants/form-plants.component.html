@@ -1,3 +1,8 @@
 <div>
-    
+    <span>Formulario</span>
+    <div class="flex flex-row">
+        <div *ngFor="let plantSelection of plantsSelection">
+            <app-componet-plants [plant]="plantSelection"></app-componet-plants>
+        </div>
+    </div>
 </div>

@@ -1,1 +1,6 @@
-<p>componet-plants works!</p>
+<button (click)="clickPlant()">
+    <div>
+        <img class="imgPlant" [src]="plant.imagePath">
+    </div>
+    <span>{{ plant.name }}</span>
+</button>
