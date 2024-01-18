@@ -7,6 +7,18 @@
     @apply text-center;
 }
 
+.subtitulo {
+    @apply text-center;
+}
+
+.input {
+    @apply w-1/2 text-center border-2 rounded-lg border-gray-600;
+}
+
 .imgPlant {
     @apply w-72 h-auto;
+}
+
+.imgButton {
+    @apply w-20 h-auto;
 }
