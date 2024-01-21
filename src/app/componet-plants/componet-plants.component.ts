@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlantSelection } from '../models/plant-selection.interface';
 
@@ -12,7 +12,11 @@ import { PlantSelection } from '../models/plant-selection.interface';
 export class ComponetPlantsComponent {
   @Input() plant!: PlantSelection;
 
+  @ViewChild('holabutton') holabutton!: ElementRef;
+
   public clickPlant(): void {
     console.log("Hola " + this.plant.name);
+    console.log(this.holabutton);
+    //this.holabutton.nativeElement.classList.add('bg-black');
   }
 }

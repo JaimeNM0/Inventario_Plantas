@@ -1,13 +1,19 @@
 <div class="flex flex-col items-center">
     <span class="subtitulo">Formulario</span>
-    <input class="input" type="text" placeholder="Nombre de la planta">
-    <div class="flex flex-row gap-3">
-        <div *ngFor="let plantSelection of plantsSelection">
-            <app-componet-plants [plant]="plantSelection"></app-componet-plants>
+    <input class="input" type="text" placeholder="Nombre de la planta" [(ngModel)]="plantName">
+    <div id="containerPlant" class="flex flex-row gap-3">
+        <div *ngFor="let plantSelection of plantsSelection; let i = index">
+            <button id="hola{{i}}" class="" (click)="clickPlantSelection(i)">
+                <app-componet-plants [plant]="plantSelection"></app-componet-plants>
+            </button>
         </div>
     </div>
     <div class="flex flex-row gap-3">
-        <app-button-plants [icon]="aceptar"></app-button-plants>
-        <app-button-plants [icon]="cancelar"></app-button-plants>
+        <button (click)="clickAcept()">
+            <app-button-plants [icon]="accept"></app-button-plants>
+        </button>
+        <button (click)="clickCancel()">
+            <app-button-plants [icon]="cancel"></app-button-plants>
+        </button>
     </div>
 </div>
