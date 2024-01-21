@@ -1,0 +1,10 @@
+<div id="plantRegister" class="flex flex-row gap-5">
+    <span>{{ plantRegister.name }}</span>
+    <span>{{ plantRegister.type }}</span>
+    <button class="w-10" (click)="clickFavorite()">
+        <app-button-plants [icon]="favorite"></app-button-plants>
+    </button>
+    <button class="imgButtonRegister" (click)="clickDelete()">
+        <app-button-plants [icon]="delete"></app-button-plants>
+    </button>
+</div>

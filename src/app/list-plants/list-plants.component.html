@@ -1,1 +1,12 @@
-<p>list-plants works!</p>
+<div class="flex flex-row">
+    <app-form-plants class="w-1/2" (plantCreated)="onPlantsRegister($event)"></app-form-plants>
+    <div class="flex flex-col items-center w-1/2">
+        <span class="subtitulo">Listado</span>
+        <div class="flex flex-col gap-5">
+            <div id="register{{i}}" *ngFor="let plant of plants; let i = index">
+                <app-register-plants [plantRegister]="plant" (plantFavorite)="onPlantFavorite($event)"
+                    (plantDelete)="onPlantDelete($event)"></app-register-plants>
+            </div>
+        </div>
+    </div>
+</div>

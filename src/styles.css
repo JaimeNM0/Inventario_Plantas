@@ -26,3 +26,7 @@
 .imgButton {
     @apply w-20 h-auto;
 }
+
+.imgButtonRegister {
+    @apply w-8 h-auto;
+}
