@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        phone: '360px',
+        tablet: '768px',
+        desktop: '1024px',
+      },
       colors: {
         verdeClaro: '#48a45e',
         verdePuro: '#00913f',

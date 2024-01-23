@@ -11,5 +11,14 @@ import { ListPlantsComponent } from './list-plants/list-plants.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'InventarioPlantas';
+  title: string = 'InventarioPlantas';
+  mode: string = '../../../assets/img/sol.png';
+
+  public modeSwitching(): void {
+    if (this.mode === '../../../assets/img/sol.png') {
+      this.mode = '../../../assets/img/luna.png';
+    } else {
+      this.mode = '../../../assets/img/sol.png';
+    }
+  }
 }

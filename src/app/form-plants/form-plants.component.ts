@@ -31,8 +31,8 @@ export class FormPlantsComponent {
       imagePath: '../../../assets/img/arbol.png',
     },
   ];
-  public accept: string = "../../../assets/img/icono_aceptar.png";
-  public cancel: string = "../../../assets/img/icono_cancelar.png";
+  public accept: string = '../../../assets/img/icono_aceptar.png';
+  public cancel: string = '../../../assets/img/icono_cancelar.png';
 
   public clickPlantSelection(index: number): void {
     const containerPlant = this.deleteStyleContainerPlant();

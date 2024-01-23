@@ -3,12 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {
+    @apply md:grid-cols-2 md:grid-rows-1 lg:flex lg:flex-row lg:items-center lg:justify-between mx-10 my-4;
+}
+
+.divHeader {
+    @apply flex flex-row items-center justify-center lg:justify-between lg:w-3/5;
+}
+
 .titulo {
-    @apply text-center;
+    @apply text-center text-4xl;
 }
 
 .subtitulo {
-    @apply text-center;
+    @apply text-center text-2xl mb-3;
 }
 
 .input {
@@ -17,6 +25,14 @@
 
 .containerPlant {
     @apply border-2 rounded-lg border-gray-600;
+}
+
+.halfScreen {
+    @apply w-1/2;
+}
+
+.smallSeparationSize {
+    @apply gap-3;
 }
 
 .imgPlant {

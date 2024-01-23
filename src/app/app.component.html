@@ -1,10 +1,13 @@
-<main>
+<header class="header">
   <h1 class="titulo">
     Inventario de plantas
   </h1>
-  <div>
-    <!--<app-form-plants class="w-1/2"></app-form-plants>-->
-    <app-list-plants></app-list-plants>
+  <div class="divHeader">
+    <input class="input" type="text" placeholder="Buscador">
+    <button><img class="imgButton" [src]="mode" (click)="modeSwitching()"></button>
   </div>
+</header>
+<main class="m-6">
+  <app-list-plants></app-list-plants>
 </main>
 <router-outlet></router-outlet>
