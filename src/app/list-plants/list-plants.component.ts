@@ -34,7 +34,7 @@ export class ListPlantsComponent {
     },
   ];
 
-  public onPlantFavorite(plantFavorite: Plant) {
+  public onPlantFavorite(plantFavorite: Plant): void {
     this.plantFavorite = { ...plantFavorite };
     const favorite = this.findPlants(plantFavorite);
     if (favorite !== null) {
@@ -53,7 +53,7 @@ export class ListPlantsComponent {
     }
   }
 
-  public onPlantDelete(plantDelete: Plant) {
+  public onPlantDelete(plantDelete: Plant): void {
     this.plantDelete = { ...plantDelete };
     const borrar = this.findPlants(plantDelete);
     if (borrar !== null) {

@@ -1,8 +1,8 @@
-<div class="flex flex-row">
+<div class="divParentFormList">
     <app-form-plants class="halfScreen" (plantCreated)="onPlantsRegister($event)"></app-form-plants>
-    <div class="flex flex-col items-center halfScreen">
+    <div class="divFormList">
         <span class="subtitulo">Listado</span>
-        <div class="flex flex-col gap-5">
+        <div class="divChildrenList">
             <div id="register{{i}}" *ngFor="let plant of plants; let i = index">
                 <app-register-plants [plantRegister]="plant" (plantFavorite)="onPlantFavorite($event)"
                     (plantDelete)="onPlantDelete($event)"></app-register-plants>

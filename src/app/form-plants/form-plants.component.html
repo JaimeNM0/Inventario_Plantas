@@ -1,14 +1,16 @@
-<div class="flex flex-col items-center ">
+<div class="divFormList">
     <span class="subtitulo">Formulario</span>
-    <input class="input" type="text" placeholder="Nombre de la planta" [(ngModel)]="plantName">
-    <div id="containerPlant" class="flex flex-row gap-3">
+    <div class="divChildrenForm">
+        <input class="input" type="text" placeholder="Nombre de la planta" [(ngModel)]="plantName">
+    </div>
+    <div id="containerPlant" class="divChildrenForm">
         <div *ngFor="let plantSelection of plantsSelection; let i = index">
             <button id="hola{{i}}" class="" (click)="clickPlantSelection(i)">
                 <app-componet-plants [plant]="plantSelection"></app-componet-plants>
             </button>
         </div>
     </div>
-    <div class="flex flex-row gap-3">
+    <div class="divButtonForm">
         <button (click)="clickAcept()">
             <app-button-plants [icon]="accept"></app-button-plants>
         </button>

@@ -8,19 +8,43 @@
 }
 
 .divHeader {
-    @apply flex flex-row items-center justify-center lg:justify-between lg:w-3/5;
+    @apply flex flex-row gap-6 items-center justify-center lg:justify-between lg:w-3/5;
 }
 
 .titulo {
-    @apply text-center text-4xl;
+    @apply text-center text-3xl lg:text-4xl;
 }
 
 .subtitulo {
-    @apply text-center text-2xl mb-3;
+    @apply text-center text-xl md:text-2xl lg:text-3xl mb-1;
+}
+
+.inputSeeker {
+    @apply w-[100%] sm:w-3/5 md:w-1/2 lg:w-3/5 text-center border-2 rounded-lg border-gray-600;
 }
 
 .input {
-    @apply w-1/2 text-center border-2 rounded-lg border-gray-600;
+    @apply w-2/3 lg:w-1/2 text-center border-2 rounded-xl border-gray-600;
+}
+
+.divParentFormList {
+    @apply flex flex-col md:flex-row gap-5;
+}
+
+.divFormList {
+    @apply flex flex-col items-center gap-3 border-2 rounded-lg p-5;
+}
+
+.divChildrenForm {
+    @apply w-[100%] flex flex-row items-center justify-center gap-10;
+}
+
+.divChildrenList {
+    @apply w-[100%] flex flex-col items-center justify-center gap-10;
+}
+
+.divButtonForm {
+    @apply w-[100%] flex flex-row items-center justify-center gap-20;
 }
 
 .containerPlant {
@@ -28,7 +52,7 @@
 }
 
 .halfScreen {
-    @apply w-1/2;
+    @apply w-[100%] md:w-1/2;
 }
 
 .smallSeparationSize {
@@ -40,7 +64,7 @@
 }
 
 .imgButton {
-    @apply w-20 h-auto;
+    @apply w-16 md:w-14 lg:w-20 h-auto;
 }
 
 .imgButtonRegister {
