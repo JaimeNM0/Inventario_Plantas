@@ -1,6 +1,6 @@
 <div class="divParentFormList">
     <app-form-plants class="halfScreen" (plantCreated)="onPlantsRegister($event)"></app-form-plants>
-    <div class="divFormList">
+    <div class="divFormList halfScreen">
         <span class="subtitulo">Listado</span>
         <div class="divChildrenList">
             <div id="register{{i}}" *ngFor="let plant of plants; let i = index">

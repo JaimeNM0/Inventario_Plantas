@@ -28,7 +28,7 @@
 }
 
 .divParentFormList {
-    @apply flex flex-col md:flex-row gap-5;
+    @apply flex flex-col lg:flex-row gap-5;
 }
 
 .divFormList {
@@ -40,7 +40,11 @@
 }
 
 .divChildrenList {
-    @apply w-[100%] flex flex-col items-center justify-center gap-10;
+    @apply max-h-60 md:max-h-80 overflow-auto w-[100%] flex flex-col items-center justify-center gap-2;
+}
+
+.divParentRegister {
+    @apply flex flex-row text-center items-center justify-center gap-[5%];
 }
 
 .divButtonForm {
@@ -52,11 +56,7 @@
 }
 
 .halfScreen {
-    @apply w-[100%] md:w-1/2;
-}
-
-.smallSeparationSize {
-    @apply gap-3;
+    @apply w-[100%] lg:w-1/2;
 }
 
 .imgPlant {
