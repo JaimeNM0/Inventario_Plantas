@@ -2,8 +2,8 @@
     <app-form-plants class="halfScreen" (plantCreated)="onPlantsRegister($event)"></app-form-plants>
     <div class="divFormList halfScreen">
         <span class="subtitulo">Listado</span>
-        <div class="divChildrenList">
-            <div id="register{{i}}" *ngFor="let plant of plants; let i = index">
+        <div class="divChildrenList w-[100%]">
+            <div class="w-[100%] rounded-2xl" id="register{{i}}" [ngClass]="{'bg-gray-200': i % 2 !== 0}" *ngFor="let plant of plants; let i = index">
                 <app-register-plants [plantRegister]="plant" (plantFavorite)="onPlantFavorite($event)"
                     (plantDelete)="onPlantDelete($event)"></app-register-plants>
             </div>

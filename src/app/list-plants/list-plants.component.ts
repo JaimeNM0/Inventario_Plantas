@@ -42,12 +42,16 @@ export class ListPlantsComponent {
       if (this.plants[favorite].favorite == true) {
         this.plants[favorite].favorite = false;
         if (stylePlant !== null) {
-          stylePlant.classList.remove('bg-orange-400');
+          stylePlant.classList.remove('bg-[#c3ffd3]');
+          if(favorite % 2 != 0){
+            stylePlant.classList.add('bg-gray-200');
+          }
         }
       } else {
         this.plants[favorite].favorite = true;
         if (stylePlant !== null) {
-          stylePlant.classList.add('bg-orange-400');
+          stylePlant.classList.remove('bg-gray-200');
+          stylePlant.classList.add('bg-[#c3ffd3]');
         }
       }
     }

@@ -1,7 +1,7 @@
 <div id="plantRegister" class="divParentRegister">
     <span class="w-32">{{ plantRegister.name }}</span>
     <span class="w-32">{{ plantRegister.type }}</span>
-    <div class="flex items-center justify-center gap-3 w-32">
+    <div class="divChildrenRegister">
         <button class="w-10" (click)="clickFavorite()">
             <app-button-plants [icon]="favorite"></app-button-plants>
         </button>

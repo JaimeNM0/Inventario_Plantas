@@ -47,6 +47,10 @@
     @apply flex flex-row text-center items-center justify-center gap-[5%];
 }
 
+.divChildrenRegister {
+    @apply flex items-center justify-center gap-3 w-32;
+}
+
 .divButtonForm {
     @apply w-[100%] flex flex-row items-center justify-center gap-20;
 }
